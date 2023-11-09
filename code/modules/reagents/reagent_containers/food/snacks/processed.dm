@@ -188,58 +188,61 @@
 	reagent_data = list(/singleton/reagent/nutriment = list("alien fungus" = 10))
 	bitesize = 3
 
-/obj/item/reagent_containers/food/snacks/tastybread
+/obj/item/reagent_containers/food/snacks/bread_tube
 	name = "bread tube"
-	desc = "Bread in a tube. Chewy."
+	desc = "A small bread loaf in a tube. Quite chewy."
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "tastybread"
-	item_state = "candy"
-	trash = /obj/item/trash/tastybread
+	icon_state = "bread_tube"
+	trash = /obj/item/trash/bread_tube
 	filling_color = "#A66829"
 	center_of_mass = list("x"=17, "y"=16)
 	reagent_data = list(/singleton/reagent/nutriment = list("stale bread" = 4))
 	reagents_to_add = list(/singleton/reagent/nutriment = 6, /singleton/reagent/sodiumchloride = 3)
 
+// Chips
 /obj/item/reagent_containers/food/snacks/chips
-	name = "\improper Getmore salted potato chips"
+	name = "\improper Getmore salted chips"
+	desc = "Getmore salted potato chips. Thin flavoured wafers of flash-fried potato paste. Delicious!"
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	desc = "Getmore potato chips. Wafers of potato paste, flash-fried and salted, delicious!"
 	icon_state = "chips"
-	gender = PLURAL
 	trash = /obj/item/trash/chips
 	filling_color = "#E8C31E"
 	reagents_to_add = list(/singleton/reagent/nutriment = 3)
 	reagent_data = list(/singleton/reagent/nutriment = list("salted chips" = 3))
 	bitesize = 1
 
-/obj/item/reagent_containers/food/snacks/chips/cucumber
-	name = "\improper Getmore cucumber potato chips"
-	desc = "Getmore cucumber flavoured potato chips. Wafers of potato paste, flash-fried and flavoured, delicious!"
-	icon_state = "cucumberchips"
-	trash = /obj/item/trash/chips/cucumber
-	reagent_data = list(/singleton/reagent/nutriment = list("cucumber flavoured chips" = 3))
-
+// Chicken Chips
 /obj/item/reagent_containers/food/snacks/chips/chicken
-	name = "\improper Getmore chicken potato chips"
-	desc = "Getmore chicken flavoured potato chips. Wafers of potato paste, flash-fried and flavoured, delicious!"
-	icon_state = "chickenchips"
+	name = "\improper Getmore chicken chips"
+	desc = "Getmore chicken flavoured potato chips. Thin flavoured wafers of flash-fried potato paste. Delicious!"
+	icon_state = "chips_chicken"
 	trash = /obj/item/trash/chips/chicken
 	reagent_data = list(/singleton/reagent/nutriment = list("unseasoned chicken flavoured chips" = 3))
 
-/obj/item/reagent_containers/food/snacks/chips/dirtberry
-	name = "\improper Getmore dirtberry potato chips"
-	desc = "Getmore dirtberry flavoured potato chips. Made in collaboration between Getmore and the People's Republic of Adhomai. Delicious! Doesn't actually contain dirtberries, though."
-	icon_state = "dirtberrychips"
-	trash = /obj/item/trash/chips/dirtberry
-	reagent_data = list(/singleton/reagent/nutriment = list("nutty flavoured chips" = 3))
-
-/obj/item/reagent_containers/food/snacks/chips/phoron
-	name = "\improper Getmore phoron potato chips"
-	desc = "Getmore 'phoron' flavoured potato chips. Delicious! Doesn't actually contain phoron, of course, and is really just a rebranding of their shrimp cocktail chips."
-	icon_state = "phoronchips"
-	trash = /obj/item/trash/chips/phoron
+// Phoron Chips
+/obj/item/reagent_containers/food/snacks/chips/shrimp
+	name = "\improper Getmore phoron-imitation chips"
+	desc = "Getmore phoron-imitation flavoured potato chips. Delicious!"
+	desc_extended = "Doesn't actually contain phoron, of course, and is just a \"cool\"-sounding rebranding of their shrimp flavour chips."
+	icon_state = "chips_shrimp"
+	trash = /obj/item/trash/chips/shrimp
 	reagent_data = list(/singleton/reagent/nutriment = list("shrimp cocktail flavoured chips" = 3))
 
+// Cucumber Chips
+/obj/item/reagent_containers/food/snacks/chips/cucumber
+	name = "\improper Getmore cucumber chips"
+	desc = "Getmore cucumber flavoured potato chips. Thin flavoured wafers of flash-fried potato paste. Delicious!"
+	icon_state = "chips_cucumber"
+	trash = /obj/item/trash/chips/cucumber
+	reagent_data = list(/singleton/reagent/nutriment = list("cucumber flavoured chips" = 3))
+
+// Dirt Berry Chips
+/obj/item/reagent_containers/food/snacks/chips/dirtberry
+	name = "\improper Getmore dirt berry chips"
+	desc = "Getmore dirt berry flavoured potato chips. Made in collaboration between Getmore and the People's Republic of Adhomai. Delicious! Doesn't actually contain dirtberries, though."
+	icon_state = "chips_dirt_berry"
+	trash = /obj/item/trash/chips/dirt_berry
+	reagent_data = list(/singleton/reagent/nutriment = list("nutty flavoured chips" = 3))
 
 /obj/item/reagent_containers/food/snacks/meatsnack
 	name = "mo'gunz meat pie"
@@ -273,10 +276,9 @@
 	bitesize = 4
 	reagents_to_add = list(/singleton/reagent/nutriment/protein = 10, /singleton/reagent/iron = 3, /singleton/reagent/sodiumchloride = 6)
 
-
 /obj/item/reagent_containers/food/snacks/popcorn
 	name = "popcorn"
-	desc = "Now let's find some cinema."
+	desc = "Some popcorn. Goes great with a movie."
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
 	icon_state = "popcorn"
 	item_state = "candy"
@@ -298,24 +300,23 @@
 		unpopped = max(0, unpopped-1)
 	..()
 
-/obj/item/reagent_containers/food/snacks/sosjerky
-	name = "Scaredy's Private Reserve beef jerky"
+/obj/item/reagent_containers/food/snacks/jerky
+	name = "\improper Scaredy's Private Reserve beef jerky"
+	desc = "SPR-brand beef jerky. A little oversalted, actually."
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "sosjerky"
-	item_state = "candy"
-	desc = "Beef jerky. A little oversalted, actually."
-	trash = /obj/item/trash/sosjerky
+	icon_state = "jerky"
+	trash = /obj/item/trash/jerky
 	filling_color = "#631212"
 	center_of_mass = list("x"=15, "y"=9)
 	bitesize = 3
 
 	reagents_to_add = list(/singleton/reagent/nutriment/protein = 4, /singleton/reagent/sodiumchloride = 3)
 
-/obj/item/reagent_containers/food/snacks/no_raisin
-	name = "Getmore Raisins"
+/obj/item/reagent_containers/food/snacks/raisins
+	name = "\improper Getmore raisins"
+	desc = "Getmore raisins. Dry, flavorless, and oversweetened. Sounds about right."
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "4no_raisins"
-	desc = "Getmore Raisins. Dry, flavorless, and oversweetened. Sounds about right."
+	icon_state = "raisins"
 	trash = /obj/item/trash/raisins
 	filling_color = "#343834"
 	center_of_mass = list("x"=15, "y"=4)
@@ -324,10 +325,11 @@
 	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/spacetwinkie
-	name = "creamy spongecake"
+	name = "filled spongecake"
+	desc = "A filled spongecake."
+	desc_extended = "Contrary to popular belief, sponge cakes don't last forever. They do, however, leave a plastic-esque film coating the inside of your mouth."
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "space_twinkie"
-	desc = "Contrary to popular belief, Getmore's sponge cakes don't last forever. They do, however, leave a plastic-esque film coating the inside of your mouth."
+	icon_state = "filled_spongecake"
 	trash = /obj/item/trash/space_twinkie
 	filling_color = "#FFE591"
 	center_of_mass = list("x"=15, "y"=11)
@@ -335,28 +337,28 @@
 	reagent_data = list(/singleton/reagent/nutriment = list("cake" = 3, "cream filling" = 1))
 	bitesize = 2
 
-/obj/item/reagent_containers/food/snacks/cheesiehonkers
-	name = "Cheesie Honkers"
+/obj/item/reagent_containers/food/snacks/cheese_puffs
+	name = "\improper Getmore Cheesebows cheese puffs"
+	desc = "Bite sized cheesy snacks, made with real cheese! A little bit of it, anyway."
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "cheesie_honkers"
-	desc = "Bite sized cheesie snacks, made with real cheese! A little bit of it, anyway."
-	trash = /obj/item/trash/cheesie
+	icon_state = "cheese_puffs"
+	trash = /obj/item/trash/cheese_puffs
 	filling_color = "#FFA305"
 	center_of_mass = list("x"=15, "y"=9)
 	reagents_to_add = list(/singleton/reagent/nutriment = 4, /singleton/reagent/nutriment/protein/cheese = 3, /singleton/reagent/sodiumchloride = 6)
 	reagent_data = list(/singleton/reagent/nutriment = list("chips" = 2))
 	bitesize = 2
 
-/obj/item/reagent_containers/food/snacks/syndicake
-	name = "\improper Nutri-Cakes"
+/obj/item/reagent_containers/food/snacks/nutricake
+	name = "\improper Getmore Nutricake cake"
+	desc = "A moist cake with a cream filling."
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
-	icon_state = "syndi_cakes"
-	desc = "An extremely moist snack cake."
+	icon_state = "nutricake"
 	filling_color = "#FF5D05"
 	center_of_mass = list("x"=16, "y"=10)
-	trash = /obj/item/trash/syndi_cakes
+	trash = /obj/item/trash/nutricake
 	reagents_to_add = list(/singleton/reagent/nutriment = 4, /singleton/reagent/drink/doctorsdelight = 5)
-	reagent_data = list(/singleton/reagent/nutriment = list("cake" = 1,"cream filling" = 3, ))
+	reagent_data = list(/singleton/reagent/nutriment = list("cake" = 1, "cream filling" = 3))
 	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/candy_corn
@@ -372,7 +374,7 @@
 
 /obj/item/storage/box/fancy/cookiesnack
 	name = "\improper Carps Ahoy! miniature cookies"
-	desc = "A packet of Cap'n Carpie's miniature cookies! Now 100% carpotoxin free!"
+	desc = "A packet of Cap'n Carpie's miniature cookies!"
 	icon = 'icons/obj/item/reagent_containers/food/processed.dmi'
 	icon_state = "cookiesnack"
 	icon_type = "cookie"

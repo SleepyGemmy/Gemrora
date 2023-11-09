@@ -254,7 +254,7 @@
 
 
 /obj/machinery/vending/coffee
-	name = "Hot Drinks machine"
+	name = "hot drinks machine"
 	desc = "A vending machine which dispenses hot drinks."
 	product_ads = "Have a drink!;Drink up!;It's good for you!;Would you like a hot joe?;I'd kill for some coffee!;The best beans in the galaxy.;Only the finest brew for you.;Mmmm. Nothing like a coffee.;I like coffee, don't you?;Coffee helps you work!;Try some tea.;We hope you like the best!;Try our new chocolate!;Admin conspiracies"
 	icon_state = "coffee"
@@ -294,7 +294,7 @@
 	light_color = COLOR_BROWN
 
 /obj/machinery/vending/coffee/free
-	name = "Free Hot Drinks machine"
+	name = "complimentary hot drinks machine"
 	desc = "A vending machine which dispenses complimentary hot drinks."
 	random_itemcount = 0
 	products = list(
@@ -306,22 +306,22 @@
 	prices = list()
 
 /obj/machinery/vending/snack
-	name = "Getmore Chocolate Corp"
-	desc = "A snack machine courtesy of the Getmore Chocolate Corporation, based out of Mars."
+	name = "\improper Getmore vending machine"
+	desc = "A food and snacks vending machine provided by the Getmore Corporation, based out of Mars."
 	product_slogans = "Try our new nougat bar!;Twice the calories for half the price!"
-	product_ads = "The healthiest!;Award-winning chocolate bars!;Mmm! So good!;Oh my god it's so juicy!;Have a snack.;Snacks are good for you!;Have some more Getmore!;Best quality snacks straight from mars.;We love chocolate!;Try our new jerky!"
+	product_ads = "Try our healthy food!;Award-winning chocolate bars!;Mmm! So good!;The juiciest cakes!;Have a snack!;Snacks are good for you (in moderation)!;Have some more, Getmore!;Best quality snacks, straight from Mars!;We love chocolate! Do you?!;Try our new jerky!"
 	icon_state = "snack"
 	icon_vend = "snack-vend"
 	vend_id = "snacks"
 	products = list(
 		/obj/item/reagent_containers/food/snacks/candy = 6,
 		/obj/item/reagent_containers/food/drinks/dry_ramen = 6,
-		/obj/item/reagent_containers/food/snacks/chips =6,
-		/obj/item/reagent_containers/food/snacks/sosjerky = 6,
-		/obj/item/reagent_containers/food/snacks/no_raisin = 6,
+		/obj/item/reagent_containers/food/snacks/chips = 6,
+		/obj/item/reagent_containers/food/snacks/jerky = 6,
+		/obj/item/reagent_containers/food/snacks/raisins = 6,
 		/obj/item/reagent_containers/food/snacks/spacetwinkie = 6,
-		/obj/item/reagent_containers/food/snacks/cheesiehonkers = 6,
-		/obj/item/reagent_containers/food/snacks/tastybread = 6,
+		/obj/item/reagent_containers/food/snacks/cheese_puffs = 6,
+		/obj/item/reagent_containers/food/snacks/bread_tube = 6,
 		/obj/item/storage/box/pineapple = 4,
 		/obj/item/reagent_containers/food/snacks/chocolatebar = 6,
 		/obj/item/storage/box/fancy/cookiesnack = 6,
@@ -346,7 +346,7 @@
 		/obj/item/reagent_containers/food/drinks/jyalra/cherry = 5
 	)
 	contraband = list(
-		/obj/item/reagent_containers/food/snacks/syndicake = 6,
+		/obj/item/reagent_containers/food/snacks/nutricake = 6,
 		/obj/item/reagent_containers/food/snacks/koisbar = 4
 	)
 	premium = list(
@@ -356,11 +356,11 @@
 		/obj/item/reagent_containers/food/snacks/candy = 15,
 		/obj/item/reagent_containers/food/drinks/dry_ramen = 20,
 		/obj/item/reagent_containers/food/snacks/chips = 17,
-		/obj/item/reagent_containers/food/snacks/sosjerky = 20,
-		/obj/item/reagent_containers/food/snacks/no_raisin = 12,
+		/obj/item/reagent_containers/food/snacks/jerky = 20,
+		/obj/item/reagent_containers/food/snacks/raisins = 12,
 		/obj/item/reagent_containers/food/snacks/spacetwinkie = 15,
-		/obj/item/reagent_containers/food/snacks/cheesiehonkers = 15,
-		/obj/item/reagent_containers/food/snacks/tastybread = 18,
+		/obj/item/reagent_containers/food/snacks/cheese_puffs = 15,
+		/obj/item/reagent_containers/food/snacks/bread_tube = 18,
 		/obj/item/storage/box/pineapple = 20,
 		/obj/item/reagent_containers/food/snacks/chocolatebar = 12,
 		/obj/item/storage/box/fancy/gum = 15,
@@ -392,11 +392,11 @@
 		/obj/item/reagent_containers/food/snacks/candy = 6,
 		/obj/item/reagent_containers/food/drinks/dry_ramen = 12,
 		/obj/item/reagent_containers/food/snacks/chips =6,
-		/obj/item/reagent_containers/food/snacks/sosjerky = 6,
-		/obj/item/reagent_containers/food/snacks/no_raisin = 6,
+		/obj/item/reagent_containers/food/snacks/jerky = 6,
+		/obj/item/reagent_containers/food/snacks/raisins = 6,
 		/obj/item/reagent_containers/food/snacks/spacetwinkie = 6,
-		/obj/item/reagent_containers/food/snacks/cheesiehonkers = 6,
-		/obj/item/reagent_containers/food/snacks/tastybread = 12,
+		/obj/item/reagent_containers/food/snacks/cheese_puffs = 6,
+		/obj/item/reagent_containers/food/snacks/bread_tube = 12,
 		/obj/item/storage/box/pineapple = 6,
 		/obj/item/reagent_containers/food/snacks/chocolatebar = 6,
 		/obj/item/storage/box/fancy/cookiesnack = 6,
@@ -412,8 +412,8 @@
 		/obj/item/reagent_containers/food/snacks/seaweed = 10,
 	)
 /obj/machinery/vending/cola
-	name = "Idris Re-Fresh"
-	desc = "A soft drink vendor provided by an Idris subsidiary."
+	name = "\improper Idris Refresh drinks vending machine"
+	desc = "A drinks vendor provided by an Idris Incorporated subsidiary."
 	icon_state = "cola_machine"
 	icon_vend = "cola_machine-vend"
 	product_slogans = "Idris Re-Fresh: the more expensive the place, the more of us you'll seee!"

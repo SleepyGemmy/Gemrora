@@ -1,17 +1,21 @@
-//Items labled as 'trash' for the trash bag.
-//TODO: Make this an item var or something...
+//
+// Trash
+//
 
-//Added by Jack Rost
+// Parent Item
 /obj/item/trash
+	name = "trash parent item"
+	desc = DESC_PARENT
 	icon = 'icons/obj/trash.dmi'
-	w_class = ITEMSIZE_TINY
-	contained_sprite = TRUE
 	item_state = "candy"
-	desc = "General waste material, refuse or litter. Dispose responsibly."
+	contained_sprite = TRUE
+	w_class = ITEMSIZE_TINY
 	drop_sound = 'sound/items/drop/wrapper.ogg'
 	pickup_sound = 'sound/items/pickup/wrapper.ogg'
 
-/obj/item/trash/attack(mob/M as mob, mob/living/user as mob)
+// Debounce
+// Trash isn't a valid weapon.
+/obj/item/trash/attack(mob/M, mob/living/user)
 	return
 
 /obj/item/trash/koisbar
@@ -23,45 +27,49 @@
 	icon_state = "kokobar"
 
 /obj/item/trash/raisins
-	name = "\improper 4no raisins"
-	icon_state = "4no_raisins"
+	name = "empty Getmore raisins packet"
+	icon_state = "raisins"
 
 /obj/item/trash/candy
 	name = "candy wrapper"
 	icon_state = "candy"
 
-/obj/item/trash/cheesie
-	name = "\improper Cheesie Honkers"
-	icon_state = "cheesie_honkers"
+/obj/item/trash/cheese_puffs
+	name = "empty Getmore Cheesebows bag"
+	icon_state = "cheese_puffs"
 
 /obj/item/trash/chips
-	name = "empty chip packet"
+	name = "empty Getmore chips bag"
 	icon_state = "chips"
 	item_state = "chips"
 
-/obj/item/trash/chips/cucumber
-	icon_state = "cucumberchips"
-
 /obj/item/trash/chips/chicken
-	icon_state = "chickenchips"
+	name = "empty Getmore chicken chips bag"
+	icon_state = "chips_chicken"
 
-/obj/item/trash/chips/dirtberry
-	icon_state = "dirtberrychips"
+/obj/item/trash/chips/shrimp
+	name = "empty Getmore Phoron-flavour chips bag"
+	icon_state = "chips_shrimp"
 
-/obj/item/trash/chips/phoron
-	icon_state = "phoronchips"
+/obj/item/trash/chips/cucumber
+	name = "empty Getmore cucumber chips bag"
+	icon_state = "chips_cucumber"
+
+/obj/item/trash/chips/dirt_berry
+	name = "empty Getmore dirt berry chips bag"
+	icon_state = "chips_dirt_berry"
 
 /obj/item/trash/popcorn
 	name = "popcorn"
 	icon_state = "popcorn"
 
-/obj/item/trash/sosjerky
-	name = "\improper Scaredy's Private Reserve Beef Jerky"
-	icon_state = "sosjerky"
+/obj/item/trash/jerky
+	name = "empty Scaredy's Private Reserve Beef Jerky packet"
+	icon_state = "jerky"
 
-/obj/item/trash/syndi_cakes
-	name = "\improper Nutri-Cakes"
-	icon_state = "syndi_cakes"
+/obj/item/trash/nutricake
+	name = "empty Getmore Nutricake cake box"
+	icon_state = "nutricake"
 
 /obj/item/trash/waffles
 	name = "square tray"
@@ -107,9 +115,9 @@
 	name = "\improper \"LiquidFood\" ration"
 	icon_state = "liquidfood"
 
-/obj/item/trash/tastybread
-	name = "bread tube"
-	icon_state = "tastybread"
+/obj/item/trash/bread_tube
+	name = "empty bread tube"
+	icon_state = "bread_tube"
 
 /obj/item/trash/meatsnack
 	name = "mo'gunz meat pie"
