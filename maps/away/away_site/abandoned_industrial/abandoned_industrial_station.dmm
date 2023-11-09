@@ -14292,7 +14292,7 @@
 /obj/machinery/door/window/southleft{
 	name = "Storage"
 	},
-/obj/item/trash/syndi_cakes{
+/obj/item/trash/nutricake{
 	pixel_y = 3
 	},
 /obj/item/spacecash/c20{

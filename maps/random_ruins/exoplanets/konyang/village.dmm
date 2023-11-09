@@ -1736,7 +1736,7 @@
 "TG" = (
 /obj/structure/closet/crate/bin,
 /obj/item/trash/cigbutt/roll,
-/obj/item/trash/tastybread,
+/obj/item/trash/bread_tube,
 /obj/item/trash/ramen,
 /obj/item/trash/ramen,
 /turf/simulated/floor/wood,

@@ -1,0 +1,8 @@
+author: SleepyGemmy
+
+delete-after: True
+
+changes:
+  - tweak: "Cleaned up and polished the snacks and trash files. Tweaked some item paths and icon names."
+  - tweak: "Tweaked some snacks names."
+  - tweak: "Made the chips multipacks names plural instead of singular."

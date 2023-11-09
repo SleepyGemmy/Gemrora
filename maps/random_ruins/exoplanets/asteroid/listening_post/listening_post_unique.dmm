@@ -135,7 +135,7 @@
 /turf/simulated/floor/tiled/dark/airless,
 /area/dungeon/syndie_listening_post)
 "aw" = (
-/obj/item/trash/syndi_cakes,
+/obj/item/trash/nutricake,
 /turf/simulated/floor/tiled/dark/airless,
 /area/dungeon/syndie_listening_post)
 "ax" = (
@@ -349,7 +349,7 @@
 /obj/effect/decal/cleanable/cobweb2{
 	icon_state = "cobweb1"
 	},
-/obj/item/trash/syndi_cakes,
+/obj/item/trash/nutricake,
 /turf/simulated/floor/shuttle/dark_blue/airless,
 /area/dungeon/syndie_listening_post)
 "bh" = (
@@ -489,7 +489,7 @@
 /area/dungeon/syndie_listening_post)
 "lN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/trash/syndi_cakes,
+/obj/item/trash/nutricake,
 /turf/simulated/floor/tiled/dark/airless,
 /area/dungeon/syndie_listening_post)
 "oy" = (

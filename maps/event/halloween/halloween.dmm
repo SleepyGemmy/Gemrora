@@ -8646,7 +8646,7 @@
 /turf/simulated/floor/wood/mahogany,
 /area/city/pool)
 "HT" = (
-/obj/item/trash/sosjerky,
+/obj/item/trash/jerky,
 /turf/simulated/floor/tiled/white,
 /area/city/horrorhouse)
 "HW" = (

@@ -11080,7 +11080,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/trash/cheesie,
+/obj/item/trash/cheese_puffs,
 /turf/simulated/floor/carpet/rubber,
 /area/tcommsat/lounge)
 "jNp" = (
@@ -14216,7 +14216,7 @@
 /area/storage/primary)
 "mxS" = (
 /obj/structure/table/reinforced,
-/obj/item/trash/tastybread,
+/obj/item/trash/bread_tube,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/lino,
 /area/tcommsat/lounge)

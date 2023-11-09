@@ -1389,7 +1389,7 @@
 /turf/simulated/floor/tiled/steel/airless,
 /area/wrecked_nt_ship)
 "BZ" = (
-/obj/item/trash/sosjerky,
+/obj/item/trash/jerky,
 /turf/simulated/floor/wood/airless{
 	icon_state = "wood_broken1"
 	},

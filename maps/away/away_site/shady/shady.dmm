@@ -727,7 +727,7 @@
 /area/hideout)
 "jr" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/trash/cheesie,
+/obj/item/trash/cheese_puffs,
 /turf/simulated/floor/tiled/dark,
 /area/hideout)
 "jv" = (

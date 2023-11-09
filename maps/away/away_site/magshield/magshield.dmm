@@ -3048,7 +3048,7 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/item/reagent_containers/food/snacks/cheesiehonkers,
+/obj/item/reagent_containers/food/snacks/cheese_puffs,
 /turf/simulated/floor/tiled,
 /area/magshield/south)
 "iW" = (

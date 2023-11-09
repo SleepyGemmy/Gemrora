@@ -42694,7 +42694,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/mercenary)
 "xGF" = (
-/obj/item/trash/tastybread,
+/obj/item/trash/bread_tube,
 /obj/item/trash/koisbar,
 /obj/item/trash/chipbasket,
 /obj/structure/closet/crate/trashcart,

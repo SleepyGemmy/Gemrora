@@ -23075,7 +23075,7 @@
 	dir = 1
 	},
 /obj/structure/table/standard,
-/obj/item/reagent_containers/food/snacks/cheesiehonkers,
+/obj/item/reagent_containers/food/snacks/cheese_puffs,
 /obj/effect/floor_decal/corner/green/diagonal,
 /turf/unsimulated/floor{
 	icon_state = "dark_preview"

@@ -198,7 +198,7 @@
 /turf/simulated/floor/airless,
 /area/template_noop)
 "tA" = (
-/obj/item/trash/syndi_cakes,
+/obj/item/trash/nutricake,
 /turf/template_noop,
 /area/template_noop)
 "tH" = (
