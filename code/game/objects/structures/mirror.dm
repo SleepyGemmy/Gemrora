@@ -97,7 +97,7 @@
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	vis_flags = VIS_HIDE
 	layer = ABOVE_OBJ_LAYER
-	var/alpha_icon = 'icons/obj/watercloset.dmi'
+	var/alpha_icon = 'icons/obj/bathroom.dmi'
 	var/alpha_icon_state = "mirror_mask"
 	var/obj/mirror
 	desc = "Why are you locked in the bathroom?"

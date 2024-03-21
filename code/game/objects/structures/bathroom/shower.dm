@@ -1,6 +1,6 @@
 /obj/machinery/shower
 	name = "shower"
-	desc = "A stainless steel shower. The shower's temperature is set to [water_temperature]."
+	desc = "A stainless steel shower. The shower's temperature is set to lukewarm."
 	icon = 'icons/obj/bathroom.dmi'
 	icon_state = "shower"
 	density = FALSE
@@ -26,9 +26,9 @@
 	return ..()
 
 /obj/machinery/shower/attack_hand(mob/M)
-	on = !on
+	is_on = !is_on
 	update_icon()
-	if(on)
+	if(is_on)
 		if(M.loc == loc)
 			wash(M)
 			process_heat(M)
@@ -56,14 +56,14 @@
 	if(shower_mist)
 		qdel(shower_mist)
 
-	if(on)
+	if(is_on)
 		soundloop.start(src)
 		add_overlay(image('icons/obj/bathroom.dmi', src, "water", MOB_LAYER + 1, dir))
 		if(temperature_settings[water_temperature] < T20C)
 			return // No mist for cold water.
 		if(!has_mist)
 			spawn(50)
-				if(src && on)
+				if(src && is_on)
 					has_mist = TRUE
 					shower_mist = new /obj/effect/mist(loc)
 	else
@@ -74,7 +74,7 @@
 			addtimer(CALLBACK(src, PROC_REF(clear_mist)), 250, TIMER_OVERRIDE | TIMER_UNIQUE)
 
 /obj/machinery/shower/proc/clear_mist()
-	if(!on)
+	if(!is_on)
 		QDEL_NULL(shower_mist)
 		has_mist = FALSE
 
@@ -91,7 +91,7 @@
 	..()
 
 /obj/machinery/shower/proc/wash(atom/movable/O)
-	if(!on)
+	if(!is_on)
 		return
 
 	var/obj/effect/effect/water/W = new(O)
@@ -113,7 +113,7 @@
 		tile.remove_cleanables()
 
 /obj/machinery/shower/process()
-	if(!on)
+	if(!is_on)
 		return
 	wash_floor()
 	if(!mob_present)
@@ -133,7 +133,7 @@
 		is_washing = FALSE
 
 /obj/machinery/shower/proc/process_heat(mob/living/M)
-	if(!on || !istype(M))
+	if(!is_on || !istype(M))
 		return
 
 	var/temperature = temperature_settings[water_temperature]
