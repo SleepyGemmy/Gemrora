@@ -5284,7 +5284,7 @@
 	},
 /obj/item/towel_flat,
 /obj/effect/floor_decal/corner_wide/lime/diagonal,
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /turf/simulated/floor/tiled/white,
 /area/ship/kasf_corvette/washroom)
 "Eq" = (

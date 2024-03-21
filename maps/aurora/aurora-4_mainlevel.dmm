@@ -17303,7 +17303,7 @@
 	dir = 4;
 	pixel_y = -8
 	},
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/captain)
 "aFe" = (

@@ -601,7 +601,7 @@
 	dir = 8
 	},
 /obj/item/soap,
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /obj/machinery/light/small{
 	dir = 1
 	},

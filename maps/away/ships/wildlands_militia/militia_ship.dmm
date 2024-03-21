@@ -560,7 +560,7 @@
 	req_one_access = list(28)
 	},
 /obj/structure/curtain/open/shower,
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /turf/simulated/floor/tiled/white,
 /area/ship/militia_ship)
 "fRD" = (

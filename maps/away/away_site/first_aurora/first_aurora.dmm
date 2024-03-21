@@ -1623,7 +1623,7 @@
 /turf/simulated/floor/tiled/airless,
 /area/derelict/hallway/northeast)
 "fq" = (
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/airless,

@@ -245,7 +245,7 @@
 /area/overgrown_mining_station)
 "hv" = (
 /obj/structure/curtain/open/shower,
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /obj/machinery/shower,
 /turf/simulated/floor/tiled/airless,
 /area/overgrown_mining_station)

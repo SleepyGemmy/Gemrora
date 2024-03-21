@@ -157,7 +157,7 @@
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 // Rubber Duck
-/obj/item/bikehorn/rubberducky
+/obj/item/bikehorn/rubber_duck
 	name = "rubber duck"
 	desc = "A yellow, rubber duck.
 	icon = 'icons/obj/bathroom.dmi'

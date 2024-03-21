@@ -20092,7 +20092,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/item/bikehorn/rubberducky{
+/obj/item/bikehorn/rubber_duck{
 	pixel_x = -9;
 	pixel_y = -8
 	},

@@ -26560,7 +26560,7 @@
 /obj/item/beach_ball{
 	pixel_y = 12
 	},
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /obj/item/clothing/gloves/boxing/green,
 /obj/item/clothing/gloves/boxing,
 /obj/machinery/atmospherics/unary/vent_pump/on{

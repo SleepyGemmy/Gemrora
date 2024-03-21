@@ -2394,7 +2394,7 @@
 /obj/machinery/shower{
 	dir = 4
 	},
-/obj/item/bikehorn/rubberducky{
+/obj/item/bikehorn/rubber_duck{
 	pixel_y = -5;
 	pixel_x = 4
 	},
@@ -4653,7 +4653,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/obj/item/bikehorn/rubberducky{
+/obj/item/bikehorn/rubber_duck{
 	pixel_y = -5;
 	pixel_x = 4
 	},

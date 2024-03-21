@@ -22187,7 +22187,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/table/wood,
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /turf/unsimulated/floor{
 	icon_state = "dark_preview"
 	},

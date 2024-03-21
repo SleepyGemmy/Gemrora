@@ -6536,7 +6536,7 @@
 /obj/machinery/shower{
 	dir = 4
 	},
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /turf/simulated/floor/tiled/white,
 /area/ship/ssmd_corvette/bathroom)
 "ucw" = (

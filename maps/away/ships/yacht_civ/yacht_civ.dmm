@@ -1644,7 +1644,7 @@
 	pixel_y = 14;
 	layer = 2.999
 	},
-/obj/item/bikehorn/rubberducky{
+/obj/item/bikehorn/rubber_duck{
 	pixel_y = -5;
 	pixel_x = 8
 	},

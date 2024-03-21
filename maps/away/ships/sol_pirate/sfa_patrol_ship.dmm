@@ -3090,7 +3090,7 @@
 	dir = 4
 	},
 /obj/structure/curtain/open/shower,
-/obj/item/bikehorn/rubberducky,
+/obj/item/bikehorn/rubber_duck,
 /turf/simulated/floor/tiled/white,
 /area/ship/sfa_patrol_ship/Quarters)
 "mwb" = (

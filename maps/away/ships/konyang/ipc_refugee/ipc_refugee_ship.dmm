@@ -6424,7 +6424,7 @@
 /obj/machinery/shower{
 	pixel_y = 8
 	},
-/obj/item/bikehorn/rubberducky{
+/obj/item/bikehorn/rubber_duck{
 	pixel_x = -8;
 	pixel_y = 6
 	},
