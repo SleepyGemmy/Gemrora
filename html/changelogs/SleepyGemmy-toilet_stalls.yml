@@ -1,0 +1,8 @@
+author: SleepyGemmy
+
+delete-after: True
+
+changes:
+  - tweak: "Cleaned up toilet, sink, and shower code."
+  - tweak: "Added more temperature settings to showers (warm and cold)."
+  - tweak: "Removed having to use an analyzer to tell a shower's temperature."
