@@ -129,7 +129,7 @@
 /obj/structure/urinal
 	name = "urinal"
 	desc = "A white, ceramic urinal."
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/bathroom.dmi'
 	icon_state = "urinal"
 	anchored = TRUE
 	density = FALSE
