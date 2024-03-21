@@ -159,7 +159,7 @@
 // Rubber Duck
 /obj/item/bikehorn/rubber_duck
 	name = "rubber duck"
-	desc = "A yellow, rubber duck.
+	desc = "A yellow, rubber duck."
 	icon = 'icons/obj/bathroom.dmi'
 	icon_state = "rubber_duck"
 	item_state = "rubber_duck"
