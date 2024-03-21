@@ -155,3 +155,11 @@
     anchored = TRUE
 	layer = MOB_LAYER + 1
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+
+// Rubber Duck
+/obj/item/bikehorn/rubberducky
+	name = "rubber duck"
+	desc = "A yellow, rubber duck.
+	icon = 'icons/obj/bathroom.dmi'
+	icon_state = "rubber_duck"
+	item_state = "rubber_duck"

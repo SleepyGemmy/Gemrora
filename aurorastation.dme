@@ -1320,7 +1320,6 @@
 #include "code\game\objects\structures\barricades\plasteel.dm"
 #include "code\game\objects\structures\barricades\wood.dm"
 #include "code\game\objects\structures\bathroom\puddle.dm"
-#include "code\game\objects\structures\bathroom\rubber_duck.dm"
 #include "code\game\objects\structures\bathroom\shower.dm"
 #include "code\game\objects\structures\bathroom\sink.dm"
 #include "code\game\objects\structures\bathroom\toilet.dm"
