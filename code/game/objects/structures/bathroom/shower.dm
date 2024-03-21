@@ -1,6 +1,6 @@
 /obj/machinery/shower
 	name = "shower"
-	desc = "A stainless steel shower."
+	desc = "A stainless steel shower. The shower's temperature is set to [water_temperature]."
 	icon = 'icons/obj/bathroom.dmi'
 	icon_state = "shower"
 	density = FALSE
@@ -11,8 +11,8 @@
 	var/mob_present = FALSE // `TRUE` if there is a mob on the shower's turf, this is to ease process().
     var/has_mist = FALSE
     var/spray_amount = 20
-    var/water_temperature = "lukewarm" // Boiling, lukewarm, or freezing.
-	var/list/temperature_settings = list("boiling" = T0C + 100, "lukewarm" = T0C + 37, "freezing" = T0C) // 37 celsius, 100 celsius, and 0 celsius.
+    var/water_temperature = "lukewarm" // Scalding, warm, lukewarm, cold, or freezing.
+	var/list/temperature_settings = list("scalding" = T0C + 60, "warm" = T0C + 45, "lukewarm" = T0C + 37, "cold" = T0C + 20, "freezing" = T0C + 10) // 60 celsius, 45 celsius, 37 celsius, 20 celsius, and 10 celsius.
     var/obj/effect/mist/shower_mist = null
 	var/datum/looping_sound/showering/soundloop
 
@@ -37,17 +37,19 @@
 
 /obj/machinery/shower/attackby(obj/item/attacking_item, mob/user)
 	if(attacking_item.type == /obj/item/device/analyzer)
-		to_chat(user, SPAN_NOTICE("The water temperature is set to [water_temperature]."))
+		to_chat(user, SPAN_NOTICE("The shower's temperature is set to [water_temperature]."))
 	if(attacking_item.iswrench())
-		var/new_temperature = input(user, "What would you like to set the temperature to?", "Shower Temperature") in temperature_settings
-		to_chat(user, SPAN_NOTICE("You begin to adjust the shower's temperature with \the [attacking_item]."))
-		if(attacking_item.use_tool(src, user, 50, volume = 50))
-			water_temperature = new_temperature
-			user.visible_message(
-                SPAN_NOTICE("[user] adjusts the shower's temperature with \the [attacking_item]."),
-                SPAN_NOTICE("You adjust the shower's temperature with \the [attacking_item].")
-            )
-			add_fingerprint(user)
+		var/new_temperature = tgui_input_list(user, "What would you like to set the temperature to?", "[src]", temperature_settings)
+		if(new_temperature)
+			to_chat(user, SPAN_NOTICE("You begin to adjust the shower's temperature with \the [attacking_item]."))
+			if(attacking_item.use_tool(src, user, 50, volume = 50))
+				water_temperature = new_temperature
+				desc = "A stainless steel shower. The shower's temperature is set to [water_temperature]."
+				user.visible_message(
+            	    SPAN_NOTICE("[user] adjusts the shower's temperature with \the [attacking_item]."),
+        			SPAN_NOTICE("You adjust the shower's temperature with \the [attacking_item].")
+            	)
+				add_fingerprint(user)
 
 /obj/machinery/shower/update_icon()
 	cut_overlays()
@@ -123,12 +125,12 @@
 /obj/machinery/shower/proc/wash_floor()
 	if(!has_mist && is_washing)
 		return
-	is_washing = 1
+	is_washing = TRUE
 	var/turf/T = get_turf(src)
 	reagents.add_reagent(/singleton/reagent/water, 2)
 	T.clean(src)
 	spawn(100)
-		is_washing = 0
+		is_washing = FALSE
 
 /obj/machinery/shower/proc/process_heat(mob/living/M)
 	if(!on || !istype(M))
@@ -141,14 +143,14 @@
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		if(temperature >= H.species.heat_level_1)
-			to_chat(H, SPAN_DANGER("The water is boiling hot!"))
+			to_chat(H, SPAN_DANGER("The water is scalding hot!"))
 		else if(temperature <= H.species.cold_level_1)
 			to_chat(H, SPAN_WARNING("The water is freezing cold!"))
 
 // Water Mist
 /obj/effect/mist
 	name = "mist"
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/bathroom.dmi'
 	icon_state = "mist"
     anchored = TRUE
 	layer = MOB_LAYER + 1
