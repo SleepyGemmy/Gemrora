@@ -1,6 +1,6 @@
 /obj/structure/sink
 	name = "sink"
-    desc = "A white, ceramic sink."
+	desc = "A white, ceramic sink."
 	desc_info = "You can right click this and change the amount transferred per use."
 	icon = 'icons/obj/watercloset.dmi'
 	icon_state = "sink"
@@ -157,11 +157,11 @@
 	is_washing = FALSE
 
 	if(user.loc != location)
-        return // User has moved.
+		return // User has moved.
 	if(!I)
-        return // Item's been destroyed while washing.
+		return // Item's been destroyed while washing.
 	if(user.get_active_hand() != I)
-        return // Person has switched hands or the item in their hands.
+		return // Person has switched hands or the item in their hands.
 
 	I.clean_blood()
 	user.visible_message( \

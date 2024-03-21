@@ -7,13 +7,13 @@
 	anchored = TRUE
 	use_power = POWER_USE_OFF
 	var/is_on = FALSE
-    var/is_washing = FALSE // If the shower is washing a mob.
+	var/is_washing = FALSE // If the shower is washing a mob.
 	var/mob_present = FALSE // `TRUE` if there is a mob on the shower's turf, this is to ease process().
-    var/has_mist = FALSE
-    var/spray_amount = 20
-    var/water_temperature = "lukewarm" // Scalding, warm, lukewarm, cold, or freezing.
+	var/has_mist = FALSE
+	var/spray_amount = 20
+	var/water_temperature = "lukewarm" // Scalding, warm, lukewarm, cold, or freezing.
 	var/list/temperature_settings = list("scalding" = T0C + 60, "warm" = T0C + 45, "lukewarm" = T0C + 37, "cold" = T0C + 20, "freezing" = T0C + 10) // 60 celsius, 45 celsius, 37 celsius, 20 celsius, and 10 celsius.
-    var/obj/effect/mist/shower_mist = null
+	var/obj/effect/mist/shower_mist = null
 	var/datum/looping_sound/showering/soundloop
 
 /obj/machinery/shower/Initialize()
@@ -152,7 +152,7 @@
 	name = "mist"
 	icon = 'icons/obj/bathroom.dmi'
 	icon_state = "mist"
-    anchored = TRUE
+	anchored = TRUE
 	layer = MOB_LAYER + 1
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
