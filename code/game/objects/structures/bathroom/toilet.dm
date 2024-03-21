@@ -6,7 +6,7 @@
 /obj/structure/toilet
 	name = "toilet"
 	desc = "A white, ceramic toilet."
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/bathroom.dmi'
 	icon_state = "toilet00"
 	anchored = TRUE
 	density = FALSE

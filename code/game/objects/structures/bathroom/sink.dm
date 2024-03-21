@@ -2,7 +2,7 @@
 	name = "sink"
 	desc = "A white, ceramic sink."
 	desc_info = "You can right click this and change the amount transferred per use."
-	icon = 'icons/obj/watercloset.dmi'
+	icon = 'icons/obj/bathroom.dmi'
 	icon_state = "sink"
 	anchored = TRUE
 	var/is_washing = FALSE // If the sink is washing something.
