@@ -54,7 +54,7 @@
 /obj/structure/toilet/attackby(obj/item/attacking_item, mob/user)
 	if(attacking_item.iscrowbar())
 		to_chat(user, SPAN_NOTICE("You start to [is_cistern_open ? "replace the lid on the cistern" : "lift the lid off the cistern"]."))
-		playsound(loc, 'sound/effects/stonedoor_is_lid_openclose.ogg', 50, 1)
+		playsound(get_turf(src), 'sound/effects/stonedoor_openclose.ogg', 50, 1)
 		if(attacking_item.use_tool(src, user, 30, volume = 0))
 			user.visible_message(
 				SPAN_NOTICE("[user] [is_cistern_open ? "replaces the lid on the cistern" : "lifts the lid off the cistern"]!"),
